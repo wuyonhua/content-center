@@ -21,40 +21,6 @@ spring:
           # 允许调用的提供者版本
 #          target-version: v1
     sentinel:
-#      datasource:
-#        # 名称随意
-#        flow:
-#          nacos:
-#            server-addr: localhost:8848
-#            dataId: ${spring.application.name}-flow-rules
-#            groupId: SENTINEL_GROUP
-#            # 规则类型，取值见：
-#            # org.springframework.cloud.alibaba.sentinel.datasource.RuleType
-#            rule-type: flow
-#        degrade:
-#          nacos:
-#            server-addr: localhost:8848
-#            dataId: ${spring.application.name}-degrade-rules
-#            groupId: SENTINEL_GROUP
-#            rule-type: degrade
-#        system:
-#          nacos:
-#            server-addr: localhost:8848
-#            dataId: ${spring.application.name}-system-rules
-#            groupId: SENTINEL_GROUP
-#            rule-type: system
-#        authority:
-#          nacos:
-#            server-addr: localhost:8848
-#            dataId: ${spring.application.name}-authority-rules
-#            groupId: SENTINEL_GROUP
-#            rule-type: authority
-#        param-flow:
-#          nacos:
-#            server-addr: localhost:8848
-#            dataId: ${spring.application.name}-param-flow-rules
-#            groupId: SENTINEL_GROUP
-#            rule-type: param-flow
       filter:
         # 打开(true)/关闭(false)对Spring MVC端点的保护
         enabled: true
@@ -110,10 +76,3 @@ resttemplate:
   sentinel:
     # 关闭 @SentinelRestTemplate注解 enabled: false
     enabled: true
-
-##指定您要接入的特定的 AHAS 环境
-#ahas.namespace: default
-##自定义您的应用名称
-#project.name: conten-center
-##配置 license 信息
-#ahas.license: 4523495f8d0e4a0aaf86e6825fbc0708
